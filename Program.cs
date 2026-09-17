@@ -11,3 +11,9 @@ int Kmdij = int.Parse(Console.ReadLine());
 Console.WriteLine("Éjszakai pótlék szorzója:");
 double ejszpot = double.Parse(Console.ReadLine());
 double ossz = alapdij + (Tav * Kmdij);
+bool ejsz = false;
+if  (Ejszaka=="Igen" ||Ejszaka=="igen")
+{
+    ejsz=true;
+    ossz *= ejszpot;
+}
