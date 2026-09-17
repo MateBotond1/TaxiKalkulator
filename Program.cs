@@ -1,1 +1,13 @@
-﻿
+﻿Console.WriteLine("Utas neve:");
+string Utasnev = Console.ReadLine();
+Console.WriteLine("Megtett táv:");
+int Tav = int.Parse(Console.ReadLine());
+Console.WriteLine("Éjszakai utazás(Igen v. Nem):");
+string Ejszaka = Console.ReadLine();
+Console.WriteLine("Alapdíj:");
+int alapdij = int.Parse(Console.ReadLine());
+Console.WriteLine("Km díj:");
+int Kmdij = int.Parse(Console.ReadLine());
+Console.WriteLine("Éjszakai pótlék szorzója:");
+double ejszpot = double.Parse(Console.ReadLine());
+double ossz = alapdij + (Tav * Kmdij);
