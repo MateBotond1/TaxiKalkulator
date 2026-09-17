@@ -12,8 +12,20 @@ Console.WriteLine("Éjszakai pótlék szorzója:");
 double ejszpot = double.Parse(Console.ReadLine());
 double ossz = alapdij + (Tav * Kmdij);
 bool ejsz = false;
+double osszesen = ossz;
 if  (Ejszaka=="Igen" ||Ejszaka=="igen")
 {
     ejsz=true;
-    ossz *= ejszpot;
+    osszesen =ossz* (1+ejszpot);
 }
+Console.WriteLine("--------ÖSSZEGZÉS---------");
+Console.Write("Utas neve:");
+Console.WriteLine($"{Utasnev}");
+Console.Write("Megtett táv:");
+Console.WriteLine($"{Tav} km");
+Console.Write("Alapérték:");
+Console.WriteLine($"{ossz} Ft");
+Console.Write("Fizetendő végösszeg:");
+Console.WriteLine($"{osszesen} Ft");
+Console.Write("Státusz:");
+Console.WriteLine($"{ejszpot*100}% éjszakai pótlék felszámolva.");
